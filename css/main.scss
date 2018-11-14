@@ -1,0 +1,12 @@
+$colors:(
+    fontmain: #FFFFFF,
+    bodymain: #55009f
+);
+
+body,html{
+    height:100%;
+}
+
+body{
+    background-color: map-get($colors, bodymain);
+}
