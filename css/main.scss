@@ -1,6 +1,7 @@
 $colors:(
     fontmain: #FFFFFF,
-    bodymain: #55009f
+    bodymain: #55009f,
+    navbg: #d62434
 );
 
 body,html{
@@ -9,4 +10,15 @@ body,html{
 
 body{
     background-color: map-get($colors, bodymain);
+}
+.navbar{
+    padding: 0rem 1rem;
+}
+.bg-custom{
+    background-color: map-get($colors, navbg);
+    .nav-item{
+        .nav-link{
+            color : white;
+        }
+    }
 }
