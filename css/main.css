@@ -147,7 +147,6 @@ h2{
   background-color: #f1f1f1;
   text-align: center;
   font-size: 30px;
-  border:1px solid black;
   float:left;
   width:12.5%;
   position:relative;
@@ -171,6 +170,70 @@ h2{
 .lastmain, .lastmain img{
 	width:100%;
 }
-.flextext{
+/*.flex-container #first {
+    background-image: url(./images/one.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container #second {
+    background-image: url(../images/two.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #third {
+    background-image: url(../images/three.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #fourth {
+    background-image: url(../images/four.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #fifth {
+    background-image: url(../images/five.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #sixth {
+    background-image: url(../images/six.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #seventh {
+    background-image: url(../images/seven.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}.flex-container #eighth {
+    background-image: url(../images/eight.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+.flextext p{
+	left:24%;
+}
+.flextext img {
+    left: -3%;
+    width: 103%;
+    height: 100%;
+}
+
+.flextext img,.flextext p{	
+	position:absolute;
+}
+div.flex-container , .verticaltext {
+    transition: width 0.3s ease-in-out;
+    -webkit-transition:width 0.3s ease-in-out;
+    position: absolute;
+    display: inline-block;
 
 }
+
+/*div.flex-container div.flextext:hover {
+    width: 300px;
+    height: 20px;
+}*/
