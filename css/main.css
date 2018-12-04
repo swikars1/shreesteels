@@ -215,11 +215,20 @@ h2{
 */
 .flextext p{
 	left:24%;
+	color:white;
 }
 .flextext img {
     left: -3%;
     width: 103%;
     height: 100%;
+	z-index:99;
+}
+.iconclass{
+    width: 65px!important;
+    height: auto!important;
+    left: 48.3% !important;
+    transform: translate(-50%);
+    top: 85%;
 }
 
 .flextext img,.flextext p{	
@@ -229,7 +238,7 @@ div.flex-container , .verticaltext {
     transition: width 0.3s ease-in-out;
     -webkit-transition:width 0.3s ease-in-out;
     position: absolute;
-    display: inline-block;
+  
 
 }
 
