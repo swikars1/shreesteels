@@ -153,7 +153,7 @@ h2{
   height:inherit;
 }
 
-.verticaltext{
+[class*='verticaltext']{
 	transform: rotate(180deg);
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
@@ -161,7 +161,31 @@ h2{
 	text-align: center;
 	cursor: pointer;
 	position: relative;
-
+}
+.verticaltext1{
+	top:32%;
+}
+.verticaltext2{
+	top:32%;
+	left:36%!important;
+}
+.verticaltext3{
+	top:32%;
+}
+.verticaltext4{
+	top:32%;
+}
+.verticaltext5{
+	top:32%;
+}
+.verticaltext6{
+	top:32%;
+}
+.verticaltext7{
+	top:32%;
+}
+.verticaltext8{
+	top:32%;
 }
 .flextext1 > p{
 	top: 30%;
@@ -216,6 +240,9 @@ h2{
 .flextext p{
 	left:24%;
 	color:white;
+	font-size:28px;
+	z-index:999;
+	font-weight:900;
 }
 .flextext img {
     left: -3%;
@@ -223,12 +250,22 @@ h2{
     height: 100%;
 	z-index:99;
 }
+.coverdiv {
+    position: absolute;
+    left: -3%;
+    width: 103%;
+    opacity: .85;
+    height: 100%;
+    background-color: #D62F34;
+    z-index: 110;
+}
 .iconclass{
     width: 65px!important;
     height: auto!important;
     left: 48.3% !important;
     transform: translate(-50%);
     top: 85%;
+	z-index:999!important;
 }
 
 .flextext img,.flextext p{	
