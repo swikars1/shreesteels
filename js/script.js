@@ -109,5 +109,43 @@ $(document).ready(function(){
 		$('#seventh').find('img').not($('.iconclass')).remove();
 		$('#first').find('img').not($('.iconclass')).remove();
 	});
+
+	// smooth scroll
+
+	$("#about").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#aboutus").offset().top	 
+		}, 800);
+	});
+
+	$("#product").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#products").offset().top	 
+		}, 1000);
+	});
+
+	$("#attribute").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#8attributes").offset().top	 
+		}, 1100);
+	});
+
+	$("#kobelco").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#japanese_technology_and_infrastructure").offset().top	 
+		}, 1400);
+	});
+
+	$("#infrastructure").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#japanese_technology_and_infrastructure").offset().top	 
+		}, 1700);
+	});
+
+	$("#contact").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#contactus").offset().top	 
+		}, 2000);
+	});
 	
 });
