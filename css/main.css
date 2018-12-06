@@ -166,26 +166,32 @@ h2{
 	top:32%;
 }
 .verticaltext2{
-	top:32%;
+	top:37%;
 	left:36%!important;
 }
 .verticaltext3{
-	top:32%;
+	top:48%;
+	    left: 16%!important;
 }
 .verticaltext4{
-	top:32%;
+	top:20%;
+	left:36%!important;
 }
 .verticaltext5{
-	top:32%;
+	top:37%;
+	left:34%!important;
 }
 .verticaltext6{
-	top:32%;
+	top:39%;
+	left:34%!important;
 }
 .verticaltext7{
-	top:32%;
+	top:26%;
+	left:34%!important;
 }
 .verticaltext8{
-	top:32%;
+	top:36%;
+	left:34%!important;
 }
 .flextext1 > p{
 	top: 30%;
@@ -260,17 +266,34 @@ h2{
     z-index: 110;
 }
 .iconclass{
-    width: 65px!important;
+    width: 55px!important;
     height: auto!important;
     left: 48.3% !important;
     transform: translate(-50%);
     top: 85%;
 	z-index:999!important;
 }
+.inside1{
 
+    width: 101% !important;
+    left: 0%!important;
+
+}
 .flextext img,.flextext p{	
 	position:absolute;
 }
+[class*='inside'] {
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    top: 0%;
+    width: 91%;
+}
+.insideimage{
+    width: 59.8%;
+    height: 550px;
+}
+
 div.flex-container , .verticaltext {
     transition: width 0.3s ease-in-out;
     -webkit-transition:width 0.3s ease-in-out;
