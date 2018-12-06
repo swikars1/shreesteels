@@ -99,9 +99,10 @@ h2{
 	height:400px;
 }
 .sidetext{
+	overflow:auto;
 	width:43%;
 	float: left;
-	padding: 10% 10% 10% 10%;
+	padding: 8%;
 	background-color: white;
 	height:400px;
 }
@@ -115,9 +116,7 @@ h2{
 	font-size:.85em;
 	text-align: justify;
 }
-.attributediv{
 
-}
 .headingdiv{
 	text-align: center;
 	background-color: #D62F34;
@@ -137,7 +136,7 @@ h2{
 .flex-container {
   display: inline-block;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+  background-color: #929799;
   height:550px;
   align-items: flex-end;
   width:100%;
@@ -163,34 +162,34 @@ h2{
 	position: relative;
 }
 .verticaltext1{
-	top:32%;
+	top:34%;
 }
 .verticaltext2{
-	top:37%;
+	top:29%;
 	left:36%!important;
 }
 .verticaltext3{
-	top:48%;
+	top:42%;
 	    left: 16%!important;
 }
 .verticaltext4{
-	top:20%;
+	top:12%;
 	left:36%!important;
 }
 .verticaltext5{
-	top:37%;
+	top:31%;
 	left:34%!important;
 }
 .verticaltext6{
-	top:39%;
+	top:33%;
 	left:34%!important;
 }
 .verticaltext7{
-	top:26%;
+	top:20%;
 	left:34%!important;
 }
 .verticaltext8{
-	top:36%;
+	top:33%;
 	left:34%!important;
 }
 .flextext1 > p{
@@ -258,11 +257,11 @@ h2{
 }
 .coverdiv {
     position: absolute;
-    left: -3%;
-    width: 103%;
+    left: 0%;
+    width: 100%;
     opacity: .85;
     height: 100%;
-    background-color: #D62F34;
+    /* background-color: #D62F34; */
     z-index: 110;
 }
 .iconclass{
@@ -275,7 +274,7 @@ h2{
 }
 .inside1{
 
-    width: 101% !important;
+    width: 100% !important;
     left: 0%!important;
 
 }
@@ -294,6 +293,21 @@ h2{
     height: 550px;
 }
 
+.abovefooter {
+    display: block;
+    position: relative;
+    top: 550px;
+    height: 700px;
+}
+.abovefooter img{
+	position:relative;
+	height:50%;
+	width:50%;
+	display:block;
+	float:left;
+
+}
+
 div.flex-container , .verticaltext {
     transition: width 0.3s ease-in-out;
     -webkit-transition:width 0.3s ease-in-out;
@@ -301,6 +315,122 @@ div.flex-container , .verticaltext {
   
 
 }
+
+/* footer */
+.footer {
+    position: relative;
+    left: 0;
+	top:550px;
+    width: 100%;
+    height: 10rem;
+    background-color:#d62434;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex: 0 0 50%;
+	align-self: auto;
+	
+ }
+.blank {
+    width: 10%;
+}
+.line-height{
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 2;
+    
+}
+.container {
+    width: 50%;
+    padding: 0%;
+    text-align: right;
+    
+}
+
+.container-1 {
+    width: 50%;
+    padding: 0%;
+    text-align: left;
+}
+
+  /* responsive*/
+  @media (max-width: 1110px) {
+	.flextext p{
+		font-size: 20px!important;
+	}
+  }
+
+  @media (max-width: 1068px) {
+	.iconclass{
+		width: 43px!important;
+	}
+	.nav-item{
+		font-size:13px;
+	}
+  }
+
+  @media (max-width: 767px) {
+  
+    footer  {
+      padding-left: 20px;
+      padding-right: 20px;
+	}
+	.flextext p{
+		font-size: 12px!important;
+	}
+	.iconclass{
+		width: 22px!important;
+	}
+  }
+
+  @media (max-width: 640px) {
+	  h1{
+		  font-size:1.5rem;
+	  }
+	  h2{
+		  font-size:1.5em;
+	  }
+	.abouttext{
+		font-size: 13px;
+	}
+	.line-height{
+		font-size:11px;
+	}
+  }
+  @media (max-width: 540px) {
+	.iconclass{
+		width: 20px!important;
+	}
+	.flextext p{
+		font-size: 8px!important;
+	}
+	.navbar-brand img{
+		transform:translate(50%);
+		width:70%;
+	}
+	h2{
+		font-size:1.2em;
+	}
+	h1{
+		font-size:1.3rem;
+	}
+  }
+  @media (max-width: 350px) {
+	.abouttext{
+		font-size: 10px!important;
+	}
+
+
+
+
+  
+  .container {
+    max-width: 940px;
+  }
 
 /*div.flex-container div.flextext:hover {
     width: 300px;
