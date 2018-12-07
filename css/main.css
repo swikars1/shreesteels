@@ -9,6 +9,11 @@ body {
 
 .navbar {
   padding: 0rem 1rem;
+  position: fixed;
+  width:100%;
+  top:0;
+  overflow: hidden;
+  z-index:99999;
 }
 
 .bg-custom {
@@ -199,49 +204,7 @@ h2{
 .lastmain, .lastmain img{
 	width:100%;
 }
-/*.flex-container #first {
-    background-image: url(./images/one.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.flex-container #second {
-    background-image: url(../images/two.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #third {
-    background-image: url(../images/three.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #fourth {
-    background-image: url(../images/four.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #fifth {
-    background-image: url(../images/five.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #sixth {
-    background-image: url(../images/six.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #seventh {
-    background-image: url(../images/seven.png);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-}.flex-container #eighth {
-    background-image: url(../images/eight.png);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
+
 .flextext p{
 	left:24%;
 	color:white;
@@ -385,6 +348,31 @@ div.flex-container , .verticaltext {
 	.iconclass{
 		width: 22px!important;
 	}
+	.verticaltext1{
+		top:58%;
+	}
+	.verticaltext2{
+		top:56%;
+	}
+	.verticaltext3{
+		top:61%;
+	}
+	.verticaltext4{
+		top:49%;
+	}
+	.verticaltext5{
+		top:57%;
+	}
+	.verticaltext6{
+		top:58%;
+	}
+	.verticaltext7{
+		top:53%;
+	}
+	.verticaltext8{
+		top:59%;
+	}
+	
   }
 
   @media (max-width: 640px) {

@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	// fixed navbar
+	let navheight = $('.navbar').height();
+	$('#belowfixednav').css({"margin-top":`${navheight}px`});
+
 	$('.iconclass').css({"width":"55px"});
 	$('.flextext').click(function(){
 		$('.flextext img').css({"width":"100%","left":"0%"});
@@ -19,8 +23,8 @@ $(document).ready(function(){
 		$(this).animate({"width":"54.4%"}
 		,600
 		,"swing");
-		$('.verticaltext1').css({"left":"8%","top":"34%"});
-		$('.verticaltext4').css({"top":"17%"});
+		$('.verticaltext1').css({"left":"8%"});
+		// $('.verticaltext4').css({"top":"17%"});
 		
 		$('.verticaltext1,.verticaltext2,.verticaltext3,.verticaltext4,.verticaltext5,.verticaltext6,.verticaltext7,.verticaltext8').css({"font-size":"23px"});
 		
@@ -111,41 +115,46 @@ $(document).ready(function(){
 	});
 
 	// smooth scroll
+	$(".navbar-brand").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#home").offset().top-navheight	 
+		}, 1000);
+	});
 
 	$("#about").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#aboutus").offset().top	 
-		}, 800);
+			scrollTop: $("#aboutus").offset().top-navheight	 
+		}, 1000);
 	});
 
 	$("#product").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#products").offset().top	 
+			scrollTop: $("#products").offset().top-navheight	 
 		}, 1000);
 	});
 
 	$("#attribute").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#8attributes").offset().top	 
-		}, 1100);
+			scrollTop: $("#8attributes").offset().top-navheight	 
+		}, 1000);
 	});
 
 	$("#kobelco").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#japanese_technology_and_infrastructure").offset().top	 
-		}, 1400);
+			scrollTop: $("#japanese_technology_and_infrastructure").offset().top-navheight	 
+		}, 1000);
 	});
 
 	$("#infrastructure").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#japanese_technology_and_infrastructure").offset().top	 
-		}, 1700);
+			scrollTop: $("#japanese_technology_and_infrastructure").offset().top-navheight	 
+		}, 1000);
 	});
 
 	$("#contact").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#contactus").offset().top	 
-		}, 2000);
+			scrollTop: $("#contactus").offset().top-navheight	 
+		}, 1000);
 	});
 	
 });
