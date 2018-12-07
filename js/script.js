@@ -15,7 +15,6 @@ $(document).ready(function(){
 			.find('img')
 			.not($('.iconclass')).not($('.inside1'))
 			.hide(400);
-
 		$(this).find($('.iconclass'))
 		.hide(400);
 		$notselected.find($('.iconclass'))
