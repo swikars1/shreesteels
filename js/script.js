@@ -1,16 +1,18 @@
 $(document).ready(function(){
+	$('.openportion').hide();
 	// fixed navbar
 	let navheight = $('.navbar').height();
 	$('#belowfixednav').css({"margin-top":`${navheight}px`});
 
 	$('.iconclass').css({"width":"55px"});
 	$('.flextext').click(function(){
+		
 		$('.flextext img').css({"width":"100%","left":"0%"});
 		$('.coverdiv').css({"width":"100%","left":"0%"});
 		$notselected = $('.flex-container').children().not($(this));
 		$(this).find('p').hide();
 		$notselected.find('p').show();
-		$notselected.animate({
+		$notselected.not($('.openportion')).animate({
 			"width":"6.5%"},600,"swing")
 			.find('img')
 			.not($('.iconclass')).not($('.inside1'))
@@ -34,6 +36,7 @@ $(document).ready(function(){
 	
 	$('#first').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside1.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -44,6 +47,7 @@ $(document).ready(function(){
 	});
 		$('#second').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside2.jpg'>");
+		$('.openportion').hide();
 		$('#first').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -54,6 +58,7 @@ $(document).ready(function(){
 	});
 		$('#third').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside3.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#first').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -64,6 +69,7 @@ $(document).ready(function(){
 	});
 		$('#fourth').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside4.jpg'>");
+		$('.openportion').show(600);
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#first').find('img').not($('.iconclass')).remove();
@@ -74,6 +80,7 @@ $(document).ready(function(){
 	});
 		$('#fifth').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside5.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -84,6 +91,7 @@ $(document).ready(function(){
 	});
 		$('#sixth').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside6.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -94,6 +102,7 @@ $(document).ready(function(){
 	});
 		$('#seventh').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside7.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -104,6 +113,7 @@ $(document).ready(function(){
 	});
 			$('#eighth').click(function(){
 		$(this).append("<img class='inside1' src='./images/inside8.jpg'>");
+		$('.openportion').hide();
 		$('#second').find('img').not($('.iconclass')).remove();
 		$('#third').find('img').not($('.iconclass')).remove();
 		$('#fourth').find('img').not($('.iconclass')).remove();
@@ -144,9 +154,9 @@ $(document).ready(function(){
 		}, 1000);
 	});
 
-	$("#infrastructure").click(function() {
+	$("#infrastructures").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#japanese_technology_and_infrastructure").offset().top-navheight	 
+			scrollTop: $("#infrastructure").offset().top-navheight	 
 		}, 1000);
 	});
 

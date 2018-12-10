@@ -1,3 +1,20 @@
+@font-face {
+    font-family: dinpro;
+    src: url('../fonts/dinpro.otf');
+}
+@font-face {
+    font-family: Helvetica;
+    src: url('../fonts/HelveticaLTStd-Bold.otf');
+}
+@font-face {
+    font-family: SGHigh;
+    src: url('../fonts/SG_Alternative_High-Alt.otf');
+}
+@font-face {
+    font-family: SGMid;
+    src: url('../fonts/SG_Alternative_Mid.otf');
+}
+
 body, html {
   height: 100%;
 }
@@ -19,7 +36,18 @@ body {
 .bg-custom {
   background-color: #d62434;
 }
-
+.custombutton1 {
+    background-image: url(../icons/left.png);
+    width: 25%;
+    height: 13%;
+    margin-left: 58%;
+}
+.custombutton2 {
+    background-image: url(../icons/right.png);
+    width: 25%;
+    height: 13%;
+    margin-left: -41%;
+}
 .bg-custom .nav-item .nav-link {
   color: white;
 }
@@ -31,6 +59,7 @@ body {
 .nav-item{
 	font-size:1.4vw;
 	text-align: center;
+	font-family:dinpro;
 }
 .nav-item:not(:first-child){
 	padding-left: 2.9vw;
@@ -50,10 +79,17 @@ body {
 }
 .heading2{
 	position: absolute;
-	padding-top: 3em;
+	padding-top: 6em;
 	padding-left:60vw;
 	text-transform: uppercase;
 }
+.thirdone{
+    position: absolute;
+    left: 11%;
+    top: 63%;
+    padding: 0;
+}
+
 h2{
 	font-size:2em;
 	color:white;
@@ -81,6 +117,14 @@ h2{
 	padding-top:150px;
 	color:white;
 }
+.producttext a{
+	color:black;
+	font-weight:600;
+}
+.producttext a:hover{
+	text-decoration:none;
+	color:grey;
+}
 .aboutdiv img{
 	width:100%;
 	height:590px;
@@ -92,6 +136,7 @@ h2{
 	text-align: justify;
 	width:75%;
 	left:30%;
+	font-family:dinpro;
 }
 .productsdiv{
 	background-color: #493E5A;
@@ -120,6 +165,7 @@ h2{
 .producttext{
 	font-size:.85em;
 	text-align: justify;
+	font-family: dinpro;
 }
 
 .headingdiv{
@@ -260,7 +306,7 @@ h2{
     display: block;
     position: relative;
     top: 550px;
-    height: 700px;
+    height: 856px;
 }
 .abovefooter img{
 	position:relative;
@@ -269,6 +315,30 @@ h2{
 	display:block;
 	float:left;
 
+}
+.openportion{
+    position: absolute;
+    z-index: 999;
+    line-height: 1.7;
+    color: white;
+    width: 34.5%;
+    left: 37%;
+    top: 31%;
+}
+.openh1{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.iconopenclass{
+    position: absolute;
+    left: -25%;
+    top: 3%;
+    width: 18%;
+}
+.openp {
+    text-align: justify;
+    width: 84%;
+	font-family:dinpro;
 }
 
 div.flex-container , .verticaltext {
@@ -302,7 +372,7 @@ div.flex-container , .verticaltext {
 }
 .line-height{
     line-height: 1.5;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: dinpro;
     font-size: 18px;
     letter-spacing: 2;
     
@@ -345,6 +415,12 @@ div.flex-container , .verticaltext {
 	.flextext p{
 		font-size: 12px!important;
 	}
+	.openp{
+		font-size: 14px!important;
+	}
+	.openh1{
+		font-size: 30px!important;
+	}
 	.iconclass{
 		width: 22px!important;
 	}
@@ -382,6 +458,9 @@ div.flex-container , .verticaltext {
 	  h2{
 		  font-size:1.5em;
 	  }
+	  	.openh1{
+		font-size: 22px!important;
+	}
 	.abouttext{
 		font-size: 13px;
 	}
