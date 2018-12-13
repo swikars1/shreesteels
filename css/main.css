@@ -378,15 +378,20 @@ div.flex-container , .verticaltext {
     
 }
 .container {
-    width: 50%;
+    width: 33.33%;
     padding: 0%;
     text-align: right;
     
 }
 
 .container-1 {
-    width: 50%;
+    width: 33.33%;
     padding: 0%;
+    text-align: left;
+}
+.container-2 {
+    width: 33.33%;
+    padding-left:2%;
     text-align: left;
 }
 
@@ -404,6 +409,9 @@ div.flex-container , .verticaltext {
 	.nav-item{
 		font-size:13px;
 	}
+	.line-height{
+		font-size:11px!important;
+	'}
   }
 
   @media (max-width: 767px) {
